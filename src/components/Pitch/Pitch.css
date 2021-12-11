@@ -1,0 +1,45 @@
+.pitch {
+  max-width: 100%;
+  padding: 0;
+}
+
+.pitch--purplelight {
+  background-color: #efe8f3;
+}
+
+.pitch__container {
+  padding: 3rem;
+}
+
+.pitch__image img {
+  width: 100%;
+}
+
+.pitch__details h3 {
+  margin: 0 0 0.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #1f1f1f;
+}
+
+.pitch__details p {
+  color: #212529;
+  margin-top: 0;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .pitch__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .pitch__image, .pitch__details {
+    padding: 0 15px;
+  }
+  .pitch__image img {
+    margin: auto;
+  }
+}
