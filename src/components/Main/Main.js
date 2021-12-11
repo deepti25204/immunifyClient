@@ -11,7 +11,6 @@ import Newsletter from '../Newsletter/Newsletter';
 const Main = () => {
   return (
     <>
-      <div>Main</div>
       <Banner />
       <Facts />
       <Pitch />
