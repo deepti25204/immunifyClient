@@ -1,0 +1,124 @@
+.facts {
+  margin-top: 3rem;
+}
+.facts header {
+  position: relative;
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.facts header:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 10px auto;
+  width: 10%;
+  height: 6px;
+  background: #02e496;
+}
+
+.facts h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+}
+
+.fact {
+  max-width: 100%;
+  padding: 0;
+  margin: 3rem 0 0;
+}
+
+.fact--grey {
+  background-color: #f9f9f9;
+}
+
+.fact__image img {
+  width: 100%;
+}
+
+.fact__details h3 {
+  margin: 0 0 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #1f1f1f;
+}
+
+.fact__details p {
+  color: #212529;
+  margin-top: 0;
+}
+
+.fact__details button {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  background-color: #8f479b;
+  border: none;
+  border-radius: 50px;
+  color: #fdfdfd;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fact__details button:not(:disabled),
+.fact__details button:not(.disabled) {
+  cursor: pointer;
+}
+
+@media (min-width: 373px) {
+  .fact__details button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .facts h2 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  .fact__details h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fact__container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    /* column-gap: 30px; */
+    direction: rtl;
+    padding: 0 30px;
+    align-items: center;
+  }
+  .fact__details {
+    text-align: left;
+  }
+  .fact__image, .fact__details {
+    padding: 0 15px;
+  }
+  .fact__image img {
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .fact__container.fact__container--normal {
+    direction: ltr;
+  } 
+}
