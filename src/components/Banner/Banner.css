@@ -85,8 +85,7 @@
     min-width: 185px;
   }
   .banner__description {
-    margin-top: 50%;
+    margin-top: 24%;
     /* transform: translateY(-50%); */
-    transform: translateY(-40%);
   }
 }

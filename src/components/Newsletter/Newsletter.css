@@ -1,0 +1,90 @@
+.newsletter {
+  padding: 1rem;
+}
+
+.newsletter__container {
+  background-color: #8f479b;
+  padding: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: 0.3rem;
+}
+
+.newsletter p {
+  color: #fdfdfd;
+  line-height: 1.6em;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.newsletter__inputgroup {
+  background-color: #fdfdfd;
+  padding: 5px;
+  max-width: 100%;
+  border-radius: 50rem;
+}
+
+.newsletter__inputs {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.newsletter__inputs input {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  border-radius: 50rem;
+  border:0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  display: block;
+  transition: box-shadow .15s ease-in-out;
+  overflow: visible;
+  margin:0;
+  font-family: inherit;
+}
+
+.newsletter__btn {
+  margin-left: -1px;
+  display: flex;
+}
+
+.newsletter__btn button {
+  background-color: #8f479b;
+  color: #fdfdfd;
+  padding: 0px 20px;
+  position: relative;
+  z-index: 2;
+  border-radius: 50rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid transparent;
+}
+
+@media only screen and (min-width: 600px) {
+  .newsletter p {
+    font-size: 1.75rem;
+  }
+  .newsletter__container, .newsletter {
+    padding: 3rem;
+  }
+}
