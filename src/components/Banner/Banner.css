@@ -81,8 +81,8 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .banner__subscription {
-    min-width: 182px;
+  .banner__subscription button {
+    min-width: 185px;
   }
   .banner__description {
     margin-top: 50%;
