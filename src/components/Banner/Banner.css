@@ -84,7 +84,7 @@
     padding-right: 15px;
   }
   .banner__image {
-    align-items: end;
+    align-items: flex-end;
     display: flex;
   }
   .banner__subscription button {
