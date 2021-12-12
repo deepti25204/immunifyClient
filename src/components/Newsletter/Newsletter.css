@@ -7,6 +7,7 @@
   padding: 10px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   border-radius: 0.3rem;
+  box-sizing: border-box;
 }
 
 .newsletter p {
@@ -86,5 +87,12 @@
   }
   .newsletter__container, .newsletter {
     padding: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .newsletter__inputgroup {
+    width: 66.666667%;
+    margin: auto;
   }
 }

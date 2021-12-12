@@ -4,6 +4,8 @@
 
 .banner__description {
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .banner__heading {
@@ -75,17 +77,20 @@
   .banner__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 15px;
+    /* column-gap: 15px; */
   }
   .banner__image, .banner__description {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .banner__image {
+    align-items: end;
+    display: flex;
+  }
   .banner__subscription button {
     min-width: 185px;
   }
   .banner__description {
-    margin-top: 24%;
-    /* transform: translateY(-50%); */
+    margin-top: 0;
   }
 }

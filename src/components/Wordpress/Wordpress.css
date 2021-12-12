@@ -135,6 +135,12 @@
   .blog__updatedtime, .blog__author {
     display: inline-block;
   }
+  /* .wordpress__header {
+    padding: 3rem 1.875rem;
+  }
+  .blogs {
+    padding: 0 1.875rem;
+  } */
 }
 
 @media (min-width: 992px) {
@@ -142,9 +148,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .blogs__single, .blogs__double {
+  .blogs__single, .blogs__double, .blogs h2 {
     padding: 0 15px;
   }
+  /* .wordpress__header {
+    padding: 3rem 2.8125rem;
+  }
+   */
 }
 
 @media (min-width: 1200px) {
