@@ -100,3 +100,9 @@
     margin-top: 70px;
   }
 }
+
+@media (min-width: 992px) {
+  .banner {
+    margin-top: 30px;
+  }
+}
