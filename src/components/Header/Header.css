@@ -1,0 +1,108 @@
+.header {
+  /* padding: 0.5rem 1rem; */
+  padding: 0.5rem 0 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #f8f9fa;
+}
+
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header__brand {
+  width: 50%;
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: rgba(0,0,0,.9);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.header__brand img {
+  width: 80%;
+  background-color: transparent;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.header__signin a {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0px;
+  background: #8f479b;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  display:block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.header__signin a:hover {
+  background-color: #1f1f1f;
+}
+
+.header__breadcrumb {
+  margin-left: 0.5rem;
+}
+
+.header__breadcrumb button {
+  -webkit-appearance: button;
+  color: rgba(0,0,0,.5);
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  border-color: rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.header__breadcrumb span {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: 50%/100% 100% no-repeat;
+}
+
+@media (min-width: 600px) {
+  .header__brand {
+    width: auto;
+  } 
+  .header__signin a {
+    padding: 10px 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: .875rem;
+  }
+}
