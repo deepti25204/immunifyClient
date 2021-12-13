@@ -49,7 +49,7 @@ const Testimonials = () => {
         comments we got from parents around the world!
       </div>
 
-      <div className="testimonials__swipercontainer">
+      <div className="testimonials__swipercontainer" data-aos="fade-up">
         <Swiper className="testimonials__swiper"
           pagination={{ clickable: true}}
           autoplay={{ delay: 8000 }}

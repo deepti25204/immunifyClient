@@ -1,27 +1,40 @@
 import './Facts.css';
 import {FACTS} from '../../shared/facts';
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 const IMG = (imgName) => {
   return require(`../../images/${imgName}`);
 }
 
-const Fact = ({index, item}) => {
+const FactImage = ({item}) => {
 
   const imageSrc = (IMG(item.image) || {}).default;
+  return(
+    <div className="fact__image" data-aos="fade-up">
+      <img src={imageSrc} alt={item.alt} width="100%" height="auto" />
+    </div>
+  )
+}
+
+const FactDetails = ({item}) => {
+
+  return (
+    <div className="fact__details" data-aos="fade-up">
+      <h3> {item.title} </h3>
+      <p> {item.description} </p>
+      <button>Buy Subscription</button>
+    </div>
+  )
+}
+
+const Fact = ({index, item}) => {
+  
   return (
     <div className={"fact " + (index % 2 === 0 ? '' : 'fact--grey')}>
       <div className={"container fact__container " + (index % 2 === 0 ? 'fact__container--normal' : '')}>
-
-        <div className="fact__image">
-          <img src={imageSrc} alt={item.alt} width="100%" height="auto" />
-        </div>
-        
-        <div className="fact__details">
-          <h3> {item.title} </h3>
-          <p> {item.description} </p>
-          <button>Buy Subscription</button>
-        </div>
-      
+        <FactImage item={item} />
+        <FactDetails item={item}/>
       </div>
     </div>
   )
