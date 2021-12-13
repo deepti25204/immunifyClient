@@ -7,6 +7,7 @@ import Testimonials from '../Testimonials/Testimonials';
 import Awards from '../Awards/Awards';
 import Wordpress from '../Wordpress/Wordpess';
 import Newsletter from '../Newsletter/Newsletter';
+import Contact from '../Contact/Contact';
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
       <Awards />
       <Wordpress />
       <Newsletter />
+      <Contact />
     </>
 
   )
