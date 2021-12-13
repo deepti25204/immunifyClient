@@ -22,7 +22,7 @@ const Newsletter = () => {
               placeholder="Email here" 
               aria-label="Email here" aria-describedby="button-addon2" id="emailInputBottom" />
             <div className="newsletter__btn">
-              <button type="button" id="subscribeBtn" onClick={subscribe()}>
+              <button type="button" id="subscribeBtn" onClick={subscribe}>
                 Subscribe
               </button>
             </div>

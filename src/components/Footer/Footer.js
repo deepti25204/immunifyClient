@@ -116,6 +116,16 @@ const FooterSocial = () => {
   )
 }
 
+const FooterCopyright = () => {
+  return (
+    <div className="footer__copyright">
+      <div className="container">
+        <p>© Copyrights 2021 Immunifyme All rights reserved.</p>
+      </div>
+    </div>
+  )
+}
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -137,6 +147,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <FooterCopyright />
     </footer>
   )
 }

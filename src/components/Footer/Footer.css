@@ -191,6 +191,22 @@
   width: 0.875em;
 }
 
+.footer__copyright {
+  background-color: #8f479b;
+}
+
+.footer__copyright>div {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.footer__copyright p {
+  padding: 15px;
+  color: #fdfdfd;
+  margin: 0 auto;
+}
+
 @media (min-width: 601px) {
   .footer__logo {
     text-align: left;
